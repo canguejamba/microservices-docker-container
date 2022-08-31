@@ -4,7 +4,7 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_DB: microservices-docker-container
+      POSTGRES_DB: microservices
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
       PGDATA: /var/lib/postgresql/data
@@ -17,7 +17,7 @@ services:
 
   pgadmin:
     container_name: pgadmin4
-    image: dpage/pgadmin4:6.12
+    image: dpage/pgadmin4:6.13
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
@@ -72,7 +72,6 @@ services:
     depends_on:
       - zipkin
       - eureka-server
-
   article:
     image: cganda/article:latest
     container_name: article
