@@ -13,6 +13,10 @@ For more information on this project go to the [microservices'](https://github.c
 
 ### Getting started docker container
 
+Docker Hub repositories:
+
+![](/resources/dockerhub.png)
+
 Docker Container in action demo:
 
 ![](/resources/cmd.png)
